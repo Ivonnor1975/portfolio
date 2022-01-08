@@ -36,22 +36,6 @@ function ContactForm() {
     return (
         <section>
           <h1>Contact me</h1>
-           <p>
-            Any questions? 
-            <br/>
-            Let me know and I'll be happy to talk to you!
-            </p>
-            <ul>
-              <li  class="Address-list">
-                <p><img src="./assets/images/icons8-address-24.png" alt="Address"> Houston, TX</p>
-              </li>
-              <li class="Address-list">
-                <p><img src="./assets/images/icons8-phone-24.png" alt="Phone">Phone: 832-XXX-XXXX </p>
-              </li>
-              <li class="Address-list">
-                <p><img src="./assets/images/icons8-mail-24.png" alt="Email: ">Email: <a href="mailto:ivonnor@gmail.com">ivonnor@gmail.com</a></p>
-              </li>
-            </ul>
           <form id="contact-form" onSubmit={handleSubmit}>
           <div>
                 <label htmlFor="name">Name:</label>
