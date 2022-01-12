@@ -1,27 +1,24 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav';
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 import About from './components/About';
 import ContactForm from './components/Contact';
 
 function App() {
-  const [categories] = useState([
-     { name: "Projects", description: "Websites"},
-     { name: "Resume", description: "Download resume here" },
-  ]);
- const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
   return (
-    <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-      ></Nav>
-      <main>
-        <About></About>
-        <ContactForm></ContactForm>
-      </main>
+    <Router>
+    <div className="flex-column justify-flex-start min-100-vh">
+      <Header />
+      <div className="container">
+         <Route exact path="/About" component={About} />
+         <Route exact path="/ContactForm" component={ContactForm} />
+      </div>
+      <Footer />
     </div>
+  </Router>
   );
 }
 

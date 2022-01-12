@@ -177,6 +177,9 @@ textarea {
   flex-wrap: wrap;
 }
 
+.split{
+  display: flex;
+}
 .space-between {
   justify-content: space-between;
 }
