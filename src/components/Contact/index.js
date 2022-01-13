@@ -34,23 +34,22 @@ function ContactForm() {
         console.log(formState);
       }
     return (
-        <section>
+        <section className="container-lg box-padding mt-2 rounded-3" id="contact">
           <h1>Contact me</h1>
-          <div className="split" >
-   
-            <ul>
+          <div className="row p-3" >
+            <ul className="list-group list-group-flush">
             <p>
             Any questions? 
             <br/>
             Let me know and I'll be happy to talk to you!
             </p>
-              <li  class="Address-list">
+              <li  className="list-group-item fw-bold">
                 <p><img src="./assets/images/icons8-address-24.png" alt="Address"/> Houston, TX</p>
               </li>
-              <li class="Address-list">
+              <li className="list-group-item fw-bold">
                 <p><img src="./assets/images/icons8-phone-24.png" alt="Phone"/>Phone: 832-XXX-XXXX </p>
               </li>
-              <li class="Address-list">
+              <li className="list-group-item fw-bold">
                 <p><img src="./assets/images/icons8-mail-24.png" alt="Email: "/>Email: <a href="mailto:ivonnor@gmail.com">ivonnor@gmail.com</a></p>
               </li>
             </ul>

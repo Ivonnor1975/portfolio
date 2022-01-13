@@ -12,9 +12,12 @@ function About() {
           I offer valuable insight as you create your first project, I can help you improve your existing one, or I can create a maintainable solution quickly
           My expertise is in HTML, CSS3, SCSS, Javascript, Jquery, and AJAX.
        </p>
-      </div>
-    
-   </section>
+       </div>
+       <li className="list-group-item fw-bold mb-4">Resume: <a href="https://jeffgoji.github.io/assets/img/resume.pdf" target="_blank" rel="noreferrer">Click to
+                                download</a>
+      </li>
+
+  </section>
   )
 }
 export default About;
