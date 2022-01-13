@@ -1,20 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header className="container-fluid">
-      <div className="row">
-        <Link to="/">
-           <h1 className="p-2 text-white">IVONNE FERNANDEZ</h1>
-        </Link>
-        <nav className="text-center">
-          <Link to="/about">About</Link>
-          <Link to="/ContactForm">Contact</Link>
-          <Link to="/Projects">Projects</Link>
-       </nav>
-      </div>
-    </header>
+
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <h1 className="p-2 text-white">IVONNE FERNANDEZ</h1>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarText">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                    <NavLink className="nav-link" aria-current="page" to="About">About</NavLink>
+                </li>                         
+                <li className="nav-item">
+                      <NavLink className="nav-link" to="./Projects">Projects</NavLink>                         
+                </li>
+                <li className="nav-item">
+                    <NavLink className="nav-link" to="./ContactForm">Contact</NavLink>
+               </li>
+
+            </ul>
+        </div>
+    </nav>
   );
 };
 
