@@ -29,22 +29,18 @@ const projects = [
   }
 ]
 
-function Gallery(props) {
-  
+
+function Projects(props) {
   // Using useState, declare a new state variable 'friendsList' and set it to the 'friends' array from 'friends.json'
   const [projectList, setProjectList] = useState(projects);
 
   return (
     <div >
         <section id="projects" className="container-fluid  mt-2 rounded-3">
-
             <div className="row">
-
-              <h2 className="text-center card-header rounded-3 text-white mb-3">Projects</h2>
-
+              <h2 className="text-center card-header rounded-3 mb-3">Projects</h2>
             </div>
             <div className="row d-flex justify-content-center">
-
                 {props.children}
                 {/* Map through 'portfolioList' and render a 'Card' for each project */}
                 {projectList.map((projects) => (
@@ -65,6 +61,5 @@ function Gallery(props) {
 }
 
 
-
-export default Gallery();
+export default Projects;
 

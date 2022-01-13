@@ -6,8 +6,7 @@ import Footer from './components/Footer';
 
 import About from './components/About';
 import ContactForm from './components/Contact';
-//import Gallery from './components/Gallery';
-//<Route path="/Gallery" component={Gallery} />
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
          <Route exact path="/" component={About} />
          <Route exact path="/About" component={About} />
          <Route exact path="/ContactForm" component={ContactForm} />
-     
+         <Route exact path="/projects" component={Projects} />
       </div>
       <Footer />
     </div>

@@ -34,9 +34,12 @@ function ContactForm() {
         console.log(formState);
       }
     return (
-        <section className="container-lg box-padding mt-2 rounded-3" id="contact">
-          <h1>Contact me</h1>
-          <div className="row p-3" >
+    <section className="container-lg box-padding mt-2 rounded-3" id="contact">
+        <h1>Contact me</h1>
+         <div className="row p-3" >
+
+         <div className="col-sm-12 col-md-12 col-lg-6" >
+
             <ul className="list-group list-group-flush">
             <p>
             Any questions? 
@@ -53,28 +56,34 @@ function ContactForm() {
                 <p><img src="./assets/images/icons8-mail-24.png" alt="Email: "/>Email: <a href="mailto:ivonnor@gmail.com">ivonnor@gmail.com</a></p>
               </li>
             </ul>
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg-6">
+          <div className="mb-3">
+
           <form id="contact-form" onSubmit={handleSubmit}>
           <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                <label htmlFor="name" className="form-label text-white fw-bold fs-5">Name:</label>
+                <input type="text" defaultValue={name} className="form-control" onBlur={handleChange} name="name" />
                 </div>
                 <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                <label htmlFor="email" className="form-label text-white fw-bold fs-5">Email address:</label>
+                <input type="email" defaultValue={email} name="email" className="form-control" onBlur={handleChange} />
                 </div>
                 <div>
-                <label htmlFor="message">How can I help you?</label>
-                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                <label htmlFor="message" className="form-label text-white fw-bold fs-5">How can I help you?</label>
+                <textarea name="message" defaultValue={message} className="form-control" onBlur={handleChange} rows="5" />
                 </div>
                 {errorMessage && (
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <p className="error-text text-white fs-4 bg-dark">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <button className="btn btn-danger fs-4 mt-2" type="submit">Submit</button>
           </form>
         </div>
-        </section>
+        </div>
+        </div>
+      </section>
       )
  }
     
