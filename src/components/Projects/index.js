@@ -7,9 +7,9 @@ const projects = [
     "id": 1,
     "name": "Conroe Spaces",
     "description":" A Storage Facility web site called Conroe Spaces",
-    "image": "./assets/projects/0.JPG",
+    "image": "../../../assets/projects/0.JPG",
     "github": "https://",
-    "deployed": "https://conroespaces.com"
+    "deployed": "https://www.conroespaces.com/"
   },
   {
     "id": 2,
@@ -59,7 +59,6 @@ function Projects(props) {
 
 );
 }
-
 
 export default Projects;
 
