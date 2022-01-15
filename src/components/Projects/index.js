@@ -26,6 +26,14 @@ const projects = [
     "image": "./assets/images/2",
     "github": "https://github.com/Jsumme1/you-can-blogit",
     "deployed": "https://cabralwilliams.github.io/discover-history/"
+  },
+  {
+    "id": 4,
+    "name": "Discovery History",
+    "description": "A functional web app that allows users to learn history events",
+    "image": "./assets/images/2",
+    "github": "https://github.com/Jsumme1/you-can-blogit",
+    "deployed": "https://cabralwilliams.github.io/discover-history/"
   }
 ]
 
@@ -36,24 +44,22 @@ function Projects(props) {
   return (
     <div >
         <section id="projects" className="container-fluid box-padding mt-5">
-      
-              <h2 className="text-center mb-3">Projects</h2>
-            
+            <h2 className="text-center mb-3">Projects</h2>
             <div className="row">
-            <div className="row d-flex justify-content-center websites">
-                {props.children}
-                {/* Map through 'portfolioList' and render a 'Card' for each project */}
-                {projectList.map((projects) => (
-                    <ProjectCard
-                        key={projects.id}
-                        image={projects.image}
-                        name={projects.name}
-                        description={projects.description}
-                        github={projects.github}
-                        deployed={projects.deployed}
-                    />
-                ))}
-            </div>
+                  <div className="row d-flex justify-content-center websites">
+                      {props.children}
+                      {/* Map through 'portfolioList' and render a 'Card' for each project */}
+                      {projectList.map((projects) => (
+                          <ProjectCard
+                              key={projects.id}
+                              image={projects.image}
+                              name={projects.name}
+                              description={projects.description}
+                              github={projects.github}
+                              deployed={projects.deployed}
+                          />
+                      ))}
+                  </div>
             </div>
         </section >
     </div>

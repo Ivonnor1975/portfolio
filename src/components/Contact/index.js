@@ -35,24 +35,24 @@ function ContactForm() {
       }
     return (
     <section className="container-lg box-padding mt-2 " id="contact">
-        <h1>Contact me</h1>
+        <h2>Contact me</h2>
          <div className="row p-3" >
 
-         <div className="col-sm-12 col-md-12 col-lg-6" >
+         <div className="col-sm-12 col-md-12 col-lg-6 contact-info" >
 
-            <ul className="list-group list-group-flush">
+            <ul>
             <p>
             Any questions? 
             <br/>
             Let me know and I'll be happy to talk to you!
             </p>
-              <li  className="list-group-item fw-bold">
+              <li  className="Address-list fw-bold">
                 <p><img src="./assets/images/icons8-address-24.png" alt="Address"/> Houston, TX</p>
               </li>
-              <li className="list-group-item fw-bold">
+              <li className="Address-list fw-bold">
                 <p><img src="./assets/images/icons8-phone-24.png" alt="Phone"/>Phone: 832-XXX-XXXX </p>
               </li>
-              <li className="list-group-item fw-bold">
+              <li className="Address-list fw-bold">
                 <p><img src="./assets/images/icons8-mail-24.png" alt="Email: "/>Email: <a href="mailto:ivonnor@gmail.com">ivonnor@gmail.com</a></p>
               </li>
             </ul>

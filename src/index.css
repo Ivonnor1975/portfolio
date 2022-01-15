@@ -134,7 +134,45 @@ li {
   background: -ms-linear-gradient(top, #a8cfce, #beeae9);
 }
 /* WORK STYLES END */
+/* REACH OUT STYLES START */
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px;
+  }
 
+.contact-info div {
+  color: var(--tertiary-color);
+  
+}
+
+.contact-info h3 {
+  color:var(--tertiary-color);
+  font-size: 36px;
+  
+}
+.contact-info a {
+  color: navy;
+}
+
+.contact-info p {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+  width: 100%;
+  text-align:justify;
+  font-size: 150%;
+}
+
+.contact-info img{
+  vertical-align: middle;
+
+}
+.contact-info li {
+  list-style: none;  
+}
 
 
 button {
