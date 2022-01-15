@@ -34,7 +34,7 @@ function ContactForm() {
         console.log(formState);
       }
     return (
-    <section className="container-lg box-padding mt-2 rounded-3" id="contact">
+    <section className="container-lg box-padding mt-2 " id="contact">
         <h1>Contact me</h1>
          <div className="row p-3" >
 

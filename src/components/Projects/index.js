@@ -29,18 +29,18 @@ const projects = [
   }
 ]
 
-
 function Projects(props) {
   // Using useState, declare a new state variable 'friendsList' and set it to the 'friends' array from 'friends.json'
   const [projectList, setProjectList] = useState(projects);
 
   return (
     <div >
-        <section id="projects" className="container-fluid  mt-2 rounded-3">
+        <section id="projects" className="container-fluid box-padding mt-5">
+      
+              <h2 className="text-center mb-3">Projects</h2>
+            
             <div className="row">
-              <h2 className="text-center card-header rounded-3 mb-3">Projects</h2>
-            </div>
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex justify-content-center websites">
                 {props.children}
                 {/* Map through 'portfolioList' and render a 'Card' for each project */}
                 {projectList.map((projects) => (
@@ -53,6 +53,7 @@ function Projects(props) {
                         deployed={projects.deployed}
                     />
                 ))}
+            </div>
             </div>
         </section >
     </div>

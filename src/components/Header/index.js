@@ -5,24 +5,23 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg nav">
 
-        <h1 className="p-2 text-white">IVONNE FERNANDEZ</h1>
+        <h1 className="p-4 ">IVONNE FERNANDEZ</h1>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <NavLink className="nav-link" aria-current="page" to="About">About</NavLink>
+                    <NavLink className="nav-link" aria-current="page" to="About">About Me</NavLink>
                 </li>                         
                 <li className="nav-item">
-                      <NavLink className="nav-link" to="./Projects">Projects</NavLink>                         
+                      <NavLink className="nav-link" to="./Projects">Work</NavLink>                         
                 </li>
                 <li className="nav-item">
-                    <NavLink className="nav-link" to="./ContactForm">Contact</NavLink>
+                    <NavLink className="nav-link" to="./ContactForm">Reach Out</NavLink>
                </li>
-
             </ul>
         </div>
     </nav>

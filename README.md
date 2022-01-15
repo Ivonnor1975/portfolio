@@ -13,7 +13,10 @@ A website that provides Ivonne Bio Information,links to her projects done recent
   * [test](#test)
 
 ## Installation
-This application uses node.js, express, mongoose, and morgan  modules. 
+This application uses node.js, react, and react router. 
+   . npm init --y
+   . npm install react-router-dom@5
+   . clone Repo
 
 ## Usage
 This project is a budget tracker. Without an internet connection WHEN the user inputs an expense or deposit THEN they will receive a notification that they have added an expense or deposit WHEN the user reestablishes an internet connection THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated.
