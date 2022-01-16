@@ -20,6 +20,7 @@ This application uses node.js, react, and react router.
 
 ## Usage
 
+![image](https://user-images.githubusercontent.com/88918693/149645924-186e7d99-dece-4afd-99bb-a501dc4a02e7.png)
 
 
 ## License
