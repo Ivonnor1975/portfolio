@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import addessImage from "../../assets/images/icons8-address-24.png"
+import phoneImage from "../../assets/images/icons8-phone-24.png"
+import emailImage from "../../assets/images/icons8-mail-24.png"
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
     // JSX
-    const { name, email, message } = formState;
+    const { name, email, phone, message } = formState;
     function handleChange(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
@@ -34,57 +37,53 @@ function ContactForm() {
         console.log(formState);
       }
     return (
-    <section className="container-lg box-padding mt-2 " id="contact">
-        <h2>Contact me</h2>
-         <div className="row p-3" >
+    <div className="my-5" id="contact">
+      <h2>Contact me</h2>
+      <div classname="d-flex flex-row justify-content-center align-items-start">
+            <div className="contact-info" >
+                <ul>
+                <p>
+                Any questions? 
+                <br/>
+                Let me know and I'll be happy to talk to you!
+                </p>
+                  <li  className="Address-list fw-bold">
+                    <p><img src={addessImage} alt="Address"/>: Houston, TX</p>
+                  </li>
+                  <li className="Address-list fw-bold">
+                    <p><img src={phoneImage} alt="Phone"/>: 832-XXX-XXXX </p>
+                  </li>
+                  <li className="Address-list fw-bold">
+                    <p><img src={emailImage} alt="Email: "/>: <a href="mailto:ivonnor@gmail.com">ivonnor@gmail.com</a></p>
+                  </li>
+                </ul>
+               </div>
+               <div className="contact-form">
+                  <legend>I am here to help you</legend>
+                  <form id="contact-form" onSubmit={handleSubmit}>
+                        <label htmlFor="Name">Name:</label>
+                        <input type="text" defaultValue={name} className="form-control" onBlur={handleChange} name="name" />
+                                
+                        <label htmlFor="email">Email address:</label>
+                        <input type="email" defaultValue={email} name="email" className="form-control" onBlur={handleChange} />
 
-         <div className="col-sm-12 col-md-12 col-lg-6 contact-info" >
-
-            <ul>
-            <p>
-            Any questions? 
-            <br/>
-            Let me know and I'll be happy to talk to you!
-            </p>
-              <li  className="Address-list fw-bold">
-                <p><img src="./assets/images/icons8-address-24.png" alt="Address"/> Houston, TX</p>
-              </li>
-              <li className="Address-list fw-bold">
-                <p><img src="./assets/images/icons8-phone-24.png" alt="Phone"/>Phone: 832-XXX-XXXX </p>
-              </li>
-              <li className="Address-list fw-bold">
-                <p><img src="./assets/images/icons8-mail-24.png" alt="Email: "/>Email: <a href="mailto:ivonnor@gmail.com">ivonnor@gmail.com</a></p>
-              </li>
-            </ul>
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-6">
-          <div className="mb-3">
-
-          <form id="contact-form" onSubmit={handleSubmit}>
-          <div>
-                <label htmlFor="name" className="form-label text-white fw-bold fs-5">Name:</label>
-                <input type="text" defaultValue={name} className="form-control" onBlur={handleChange} name="name" />
-                </div>
-                <div>
-                <label htmlFor="email" className="form-label text-white fw-bold fs-5">Email address:</label>
-                <input type="email" defaultValue={email} name="email" className="form-control" onBlur={handleChange} />
-                </div>
-                <div>
-                <label htmlFor="message" className="form-label text-white fw-bold fs-5">How can I help you?</label>
-                <textarea name="message" defaultValue={message} className="form-control" onBlur={handleChange} rows="5" />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text text-white fs-4 bg-dark">{errorMessage}</p>
-                    </div>
-                )}
-                <button className="btn btn-danger fs-4 mt-2" type="submit">Submit</button>
-          </form>
-        </div>
-        </div>
-        </div>
-      </section>
-      )
+                        <label for="phone">Phone number:</label>
+                        <input type="text" defaultValue={phone} name="phone-number" className="form-control" onBlur={handleChange}  />
+                                        
+                        <label htmlFor="message">How can I help you?</label>
+                        <textarea name="message" defaultValue={message} className="form-control" onBlur={handleChange} rows="5" />
+                      
+                        {errorMessage && (
+                            <div>
+                                <p className="error-text text-white fs-4 bg-dark">{errorMessage}</p>
+                            </div>
+                        )}
+                        <button classname="btn btn-primary" type="submit">Submit</button>
+                  </form>
+              </div>
+            </div>
+         </div>
+       )
  }
     
 export default ContactForm;
