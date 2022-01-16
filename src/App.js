@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,18 +10,20 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
     <div className="flex-column justify-flex-start min-100-vh">
       <Header />
-      <div className="container">
-         <Route exact path="/" component={About} />
-         <Route exact path="/About" component={About} />
-         <Route exact path="/ContactForm" component={ContactForm} />
-         <Route exact path="/projects" component={Projects} />
-      </div>
+      <Switch>
+          <div className="container">
+            <Route exact path="/" component={About} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/ContactForm" component={ContactForm} />
+            <Route exact path="/projects" component={Projects} />
+          </div>
+      </Switch>
       <Footer />
     </div>
-  </Router>
+  </HashRouter>
   );
 }
 
