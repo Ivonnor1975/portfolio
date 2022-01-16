@@ -14,11 +14,12 @@ A website that provides Ivonne Bio Information, links to her projects done recen
 
 ## Installation
 This application uses node.js, react, and react router. 
-   . npm init --y
-   . npm install react-router-dom@5
-   . clone Repo
+   *  npm init --y
+   *  npm install react-router-dom@5
+   *  clone Repo
 
 ## Usage
+This project is just for demonstration and informational purposes. There is no true 'usage' of the project.
 
 ![image](https://user-images.githubusercontent.com/88918693/149645924-186e7d99-dece-4afd-99bb-a501dc4a02e7.png)
 
