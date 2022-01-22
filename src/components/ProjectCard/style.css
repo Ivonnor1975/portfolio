@@ -1,0 +1,66 @@
+.card {
+    background: #fff;
+    border-radius: 2px;
+    height: 325px;
+    margin: 1rem;
+    position: relative;
+    width: 325px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    text-align: left;
+  }
+  
+  .card > .img-container {
+    height: 60%;
+    overflow: hidden;
+    text-align: center;
+    background: #efefef;
+   }
+  .card > .img-container > img {
+    width: 60%
+  }
+  
+  .card > .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px;
+  }
+  
+  .card > .content > ul {
+    list-style-type: none;
+  }
+  
+  .card > .content > ul > li {
+    margin-top: 18px;
+  }
+
+  .card a{
+    font-size: 130%;
+  }
+
+  
+.card h3 {
+  margin-top: 2% ;
+  font-size: 28px;
+}
+
+.card h4 {
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+
+.card:hover{
+  color: #333333;
+  border: 1px solid #a4a4a4;
+  border-top: 2px solid #b2b2b2;
+  background-color: #aeaca8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a8cfce), to(#beeae9));
+  background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background: -o-linear-gradient(top, #a8cfce, #beeae9);
+  background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+}
+
+
+
+ 
+   
