@@ -288,6 +288,9 @@ header nav ul li a:hover {
   background: -o-linear-gradient(top, #a8cfce, #beeae9);
   background: -ms-linear-gradient(top, #a8cfce, #beeae9);
 }
+.form-control {
+  width: 90%;
+}
 
 /* REACH OUT STYLE
 /* FOOTER STYLES START */

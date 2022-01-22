@@ -3,6 +3,7 @@ import { validateEmail } from '../../utils/helpers';
 import addessImage from "../../assets/images/icons8-address-24.png"
 import phoneImage from "../../assets/images/icons8-phone-24.png"
 import emailImage from "../../assets/images/icons8-mail-24.png"
+import './style.css';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -68,7 +69,7 @@ function ContactForm() {
                         <input type="email" defaultValue={email} name="email" className="form-control" onBlur={handleChange} />
 
                         <label for="phone">Phone number:</label>
-                        <input type="text" defaultValue={phone} name="phone-number" className="form-control" onBlur={handleChange}  />
+                        <input type="text" defaultValue={phone} name="phone-number" className="form-control" style={{ height: "100px"}} onBlur={handleChange}  />
                                         
                         <label htmlFor="message">How can I help you?</label>
                         <textarea name="message" defaultValue={message} className="form-control" onBlur={handleChange} rows="5" />
