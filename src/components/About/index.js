@@ -15,12 +15,7 @@ function About() {
       <p>
           My expertise is in HTML, CSS3, SCSS, Javascript, Jquery, AJAX, Node.js, Express, Sql, MongoDB and React.
        </p>
-<<<<<<< HEAD
-       </div>
-       <li className="list-group-item fw-bold mb-4">Resume: <a href="https://ivonnor1975.github.io/assets/files/resume.pdf" target="_blank" rel="noreferrer">Click here to
-=======
-       <li className="fw-bold mb-4">Resume: <a href="https://jeffgoji.github.io/assets/img/resume.pdf" target="_blank" rel="noreferrer">Click here to
->>>>>>> c96de35d4eb7d3463fc2a2be9162c3d67f7ee23a
+       <li className="fw-bold mb-4">Resume: <a href="https://Ivonnor1975.github.io/assets/files/resume.pdf" target="_blank" rel="noreferrer">Click here to
            download it</a>
        </li>
        </div>
