@@ -13,7 +13,7 @@ function About() {
           My expertise is in HTML, CSS3, SCSS, Javascript, Jquery, and AJAX.
        </p>
        </div>
-       <li className="list-group-item fw-bold mb-4">Resume: <a href="https://jeffgoji.github.io/assets/img/resume.pdf" target="_blank" rel="noreferrer">Click here to
+       <li className="list-group-item fw-bold mb-4">Resume: <a href="https://ivonnor1975.github.io/assets/files/resume.pdf" target="_blank" rel="noreferrer">Click here to
            download it</a>
       </li>
 
