@@ -34,5 +34,11 @@
     "description": "A CMS venue application.",
     "github": "https://github.com/NoahTidwell/Enterprising-Arrangements",
     "deployed": "https://enterprising-arrangements1.herokuapp.com/"
+  },
+  {
+    "name": "The missing one",
+    "description": "Social media application to help find missing persons.",
+    "github": "https://github.com/cabralwilliams/the-missing-one",
+    "deployed": "https://lit-scrubland-68499.herokuapp.com/"
   }
 ]
